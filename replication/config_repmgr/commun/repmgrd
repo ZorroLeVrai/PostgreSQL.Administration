@@ -1,0 +1,6 @@
+REPMGRD_ENABLED=yes                    #on active `repmgr`
+REPMGRD_CONF="/etc/repmgr.conf"        #fichier de configuration de `repmgr`
+REPMGRD_OPTS="--daemonize=false"       #on n’utilise pas le mode daemonize
+REPMGRD_USER=postgres                  #on utilise l’utilisateur `postgres`
+REPMGRD_BIN=/usr/bin/repmgrd           #le binaire `repmgrd`
+REPMGRD_PIDFILE=/var/run/repmgrd.pid   #endroit du fichier .pid
