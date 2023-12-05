@@ -1,0 +1,5 @@
+CREATE TABLE names (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    nom VARCHAR(20) DEFAULT 'AAA',
+    CONSTRAINT pk_names_id PRIMARY KEY (id)
+);
