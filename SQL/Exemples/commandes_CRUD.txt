@@ -1,0 +1,37 @@
+Instance > Bases de données > Schémas > Tables
+
+DDL (Data Definition Language)
+* Création de base de données
+psql: CREATE DATABASE test2;
+createdb -U postgres mabase
+
+Suppression:
+psql: DROP DATABASE test2;
+dropdb -U postgres mabase
+
+* Création d'un schéma
+CREATE SCHEMA lundi;
+
+Suppression:
+DROP SCHEMA lundi;
+
+* Création de table
+CREATE TABLE lundi.client (
+	id int,
+	prenom varchar(30)
+);
+
+test (base de données) > lundi (schéma) > client (table);
+
+#Création de données
+* Lecture de données (SELECT).
+SELECT id, prenom FROM lundi.client;
+
+* Insertion (INSERT).
+INSERT INTO lundi.client VALUES (1, 'AA');
+
+* Modification (UPDATE).
+UPDATE lundi.client SET prenom='BC' WHERE id = 2;
+
+* Suppression de données (DELETE).
+DELETE FROM lundi.client WHERE id = 1;
